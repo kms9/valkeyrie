@@ -11,8 +11,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/abronan/valkeyrie"
-	"github.com/abronan/valkeyrie/store"
+	"github.com/kms9/valkeyrie"
+	"github.com/kms9/valkeyrie/store"
 	etcd "go.etcd.io/etcd/client/v2"
 )
 

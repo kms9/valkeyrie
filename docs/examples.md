@@ -12,13 +12,13 @@ import (
     "time"
     "log"
 
-    "github.com/abronan/valkeyrie"
-    "github.com/abronan/valkeyrie/store"
-    "github.com/abronan/valkeyrie/store/boltdb"
-    "github.com/abronan/valkeyrie/store/consul"
-    "github.com/abronan/valkeyrie/store/etcd/v3"
-    "github.com/abronan/valkeyrie/store/zookeeper"
-    "github.com/abronan/valkeyrie/store/redis"
+    "github.com/kms9/valkeyrie"
+    "github.com/kms9/valkeyrie/store"
+    "github.com/kms9/valkeyrie/store/boltdb"
+    "github.com/kms9/valkeyrie/store/consul"
+    "github.com/kms9/valkeyrie/store/etcd/v3"
+    "github.com/kms9/valkeyrie/store/zookeeper"
+    "github.com/kms9/valkeyrie/store/redis"
 )
 
 func init() {

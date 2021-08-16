@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/abronan/valkeyrie/store"
+	"github.com/kms9/valkeyrie/store"
 	"github.com/stretchr/testify/assert"
 )
 

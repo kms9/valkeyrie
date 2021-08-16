@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/abronan/valkeyrie"
-	"github.com/abronan/valkeyrie/store"
+	"github.com/kms9/valkeyrie"
+	"github.com/kms9/valkeyrie/store"
 
 	"gopkg.in/redis.v5"
 )
