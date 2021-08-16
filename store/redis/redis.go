@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/kms9/valkeyrie"
-	"github.com/kms9/valkeyrie/store"
+	"github.com/abronan/valkeyrie"
+	"github.com/abronan/valkeyrie/store"
 
 	"gopkg.in/redis.v5"
 )
@@ -47,10 +47,15 @@ func New(endpoints []string, options *store.Config) (store.Store, error) {
 		password = options.Password
 	}
 
-	return newRedis(endpoints, password, &RawCodec{})
+	var db int
+	if options != nil && options.Rdb != 0 {
+		db = options.Rdb
+	}
+
+	return newRedis(endpoints, password, db,  &RawCodec{})
 }
 
-func newRedis(endpoints []string, password string, codec Codec) (*Redis, error) {
+func newRedis(endpoints []string, password string, db int, codec Codec) (*Redis, error) {
 	// TODO: use *redis.ClusterClient if we support multiple endpoints
 	client := redis.NewClient(&redis.Options{
 		Addr:         endpoints[0],
@@ -58,6 +63,7 @@ func newRedis(endpoints []string, password string, codec Codec) (*Redis, error) 
 		ReadTimeout:  30 * time.Second,
 		WriteTimeout: 30 * time.Second,
 		Password:     password,
+		DB:				db,
 	})
 
 	// Listen to Keyspace events

@@ -10,8 +10,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/kms9/valkeyrie"
-	"github.com/kms9/valkeyrie/store"
+	"github.com/abronan/valkeyrie"
+	"github.com/abronan/valkeyrie/store"
 	"go.etcd.io/bbolt"
 )
 

@@ -1,4 +1,4 @@
-module github.com/kms9/valkeyrie
+module github.com/abronan/valkeyrie
 
 go 1.12
 

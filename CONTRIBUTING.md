@@ -35,7 +35,7 @@ Once you have a working Go installation, follow the next steps:
 
 - Get the repository:
 
-        go get -u github.com/kms9/valkeyrie
+        go get -u github.com/abronan/valkeyrie
 
 - Checkout on a new branch from the master branch to start working on a patch
 

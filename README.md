@@ -1,12 +1,12 @@
 # valkeyrie
 
-[![GoDoc](https://godoc.org/github.com/kms9/valkeyrie?status.png)](https://godoc.org/github.com/kms9/valkeyrie)
+[![GoDoc](https://godoc.org/github.com/abronan/valkeyrie?status.png)](https://godoc.org/github.com/abronan/valkeyrie)
 [![Build Status](https://travis-ci.org/abronan/valkeyrie.svg?branch=master)](https://travis-ci.org/abronan/valkeyrie)
 [![Coverage Status](https://coveralls.io/repos/abronan/valkeyrie/badge.svg)](https://coveralls.io/r/abronan/valkeyrie)
-[![Go Report Card](https://goreportcard.com/badge/github.com/kms9/valkeyrie)](https://goreportcard.com/report/github.com/kms9/valkeyrie)
+[![Go Report Card](https://goreportcard.com/badge/github.com/abronan/valkeyrie)](https://goreportcard.com/report/github.com/abronan/valkeyrie)
 
 
-fork from  https://github.com/kms9/valkeyrie
+fork from  https://github.com/abronan/valkeyrie
 to add redis thirdparty clinet and redis db select
 
 `valkeyrie` provides a `Go` native library to store metadata using Distributed Key/Value stores (or common databases).
@@ -17,11 +17,11 @@ For example, you can easily implement a generic *Leader Election* algorithm on t
 
 ## Examples of usage
 
-You can refer to [Examples](https://github.com/kms9/valkeyrie/blob/master/docs/examples.md) for a basic overview of the library.
+You can refer to [Examples](https://github.com/abronan/valkeyrie/blob/master/docs/examples.md) for a basic overview of the library.
 
 ## Compatibility
 
-A **storage backend** in `valkeyrie` implements (fully or partially) the [Store](https://github.com/kms9/valkeyrie/blob/master/store/store.go#L69) interface.
+A **storage backend** in `valkeyrie` implements (fully or partially) the [Store](https://github.com/abronan/valkeyrie/blob/master/store/store.go#L69) interface.
 
 | Calls                 |      Consul       |     Etcd      |     Zookeeper      |       Redis       |     BoltDB      |      DynamoDB     |
 |-----------------------|:-----------------:|:-------------:|:------------------:|:-----------------:|:---------------:|:-----------------:|
@@ -49,7 +49,7 @@ A **storage backend** in `valkeyrie` implements (fully or partially) the [Store]
 
 Distributed Key/Value stores often have different concepts for managing and formatting keys and their associated values. Even though `valkeyrie` tries to abstract those stores aiming for some consistency, in some cases it can't be applied easily.
 
-Please refer to the [docs/compatibility.md](https://github.com/kms9/valkeyrie/blob/master/docs/compatibility.md) file to see what are the special cases for cross-backend compatibility.
+Please refer to the [docs/compatibility.md](https://github.com/abronan/valkeyrie/blob/master/docs/compatibility.md) file to see what are the special cases for cross-backend compatibility.
 
 Calls like `WatchTree` may return different events (or number of events) depending on the backend (for now, `Etcd` and `Consul` will likely return more events than `Zookeeper` that you should triage properly).
 
@@ -59,7 +59,7 @@ Only `Consul` and `etcd` have support for secure communication and you should bu
 
 ## Contributing
 
-Want to contribute to valkeyrie? Take a look at the [Contribution Guidelines](https://github.com/kms9/valkeyrie/blob/master/CONTRIBUTING.md).
+Want to contribute to valkeyrie? Take a look at the [Contribution Guidelines](https://github.com/abronan/valkeyrie/blob/master/CONTRIBUTING.md).
 
 ## Maintainers
 

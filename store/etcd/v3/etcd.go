@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kms9/valkeyrie"
-	"github.com/kms9/valkeyrie/store"
+	"github.com/abronan/valkeyrie"
+	"github.com/abronan/valkeyrie/store"
 	etcd "go.etcd.io/etcd/client/v3"
 	"go.etcd.io/etcd/client/v3/concurrency"
 )
